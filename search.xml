@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[多说更换位网易云跟贴]]></title>
+      <url>%2Fposts%2F%E5%A4%9A%E8%AF%B4%E6%9B%B4%E6%8D%A2%E4%BD%8D%E7%BD%91%E6%98%93%E4%BA%91%E8%B7%9F%E8%B4%B4%2F</url>
+      <content type="text"><![CDATA[1alert(&apos;Hello World!&apos;);]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[解决Error: Cannot find module './build/default/DTraceProviderBindings]]></title>
       <url>%2Fposts%2F%E8%A7%A3%E5%86%B3Error-Cannot-find-module-build-default-DTraceProviderBindings%2F</url>
       <content type="text"><![CDATA[升级node v6.8.0之后发现hexo一直报这个错，虽然貌似不影响使用，但…强迫症 解决方法：121. npm uninstall hexo-cli -g2. npm install hexo-cli -g]]></content>
