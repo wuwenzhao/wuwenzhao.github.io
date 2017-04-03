@@ -690,6 +690,7 @@
             <ol>
 <li>MySQL的update语句，set列的顺序是有关系的，后面列的计算是以前面列的结果为基础的，即从左向右评估；</li>
 <li>SQLServer的update语句，set的顺序无关，所有的更改都是基于之前取出的快照；</li>
+<li>varchar类型字段，在头或尾有空格不会影响where = 操作；即：<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">A（varchar) "xxx "</div><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="keyword">table</span> <span class="keyword">where</span> A=<span class="string">"xxx"</span>; 有效</div></pre></td></tr></table></figure></li>
 </ol>
 
           
@@ -1079,11 +1080,20 @@
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://weibo.com/wuwenzhao" target="_blank" title="Weibo">
+                <a href="http://weibo.com/wuwenzhao" target="_blank" title="微博">
                   
                     <i class="fa fa-fw fa-weibo"></i>
                   
-                  Weibo
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:wuwenzhao.com@gmail.com" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Email
                 </a>
               </span>
             
@@ -1091,6 +1101,12 @@
         </div>
 
         
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
         
 
         
@@ -1125,17 +1141,6 @@
   <span class="author" itemprop="copyrightHolder">Ryan.Wu</span>
 </div>
 
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
 
 
         

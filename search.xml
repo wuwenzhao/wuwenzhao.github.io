@@ -19,7 +19,7 @@
     <entry>
       <title><![CDATA[MySQL笔记]]></title>
       <url>%2Fposts%2FMySQL%E7%AC%94%E8%AE%B0%2F</url>
-      <content type="text"><![CDATA[MySQL的update语句，set列的顺序是有关系的，后面列的计算是以前面列的结果为基础的，即从左向右评估； SQLServer的update语句，set的顺序无关，所有的更改都是基于之前取出的快照；]]></content>
+      <content type="text"><![CDATA[MySQL的update语句，set列的顺序是有关系的，后面列的计算是以前面列的结果为基础的，即从左向右评估； SQLServer的update语句，set的顺序无关，所有的更改都是基于之前取出的快照； varchar类型字段，在头或尾有空格不会影响where = 操作；即：12A（varchar) "xxx "select * from table where A="xxx"; 有效]]></content>
     </entry>
 
     
