@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[MWeb]]></title>
+      <url>%2Fposts%2FMWeb%2F</url>
+      <content type="text"><![CDATA[##MWeb官网 ##使用方法]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[hexo多说更换网易云跟贴]]></title>
       <url>%2Fposts%2F%E5%A4%9A%E8%AF%B4%E6%9B%B4%E6%8D%A2%E4%BD%8D%E7%BD%91%E6%98%93%E4%BA%91%E8%B7%9F%E8%B4%B4%2F</url>
       <content type="text"><![CDATA[意料之中的突然，多说马上要停止服务；找了个替代品 网易云跟贴 接入步骤（next主题为例） 注册账户 完善站点信息，获取productKey 配置主题下面的_config.yml gentie_productKey12# Gentie productKeygentie_productKey: xxxxxxxxxxxxxxxxxxx]]></content>
