@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[google guava笔记]]></title>
+      <url>%2Fposts%2Fgoogle-guava%E7%AC%94%E8%AE%B0%2F</url>
+      <content type="text"><![CDATA[1. List to Map1234567ImmutableMap&lt;Integer, ExpenseTypeDTO&gt; expenseTypeMap = Maps.uniqueIndex(expenseTypeDTOList, new Function&lt;ExpenseTypeDTO, Integer&gt;() &#123; @Nullable @Override public Integer apply(ExpenseTypeDTO expenseTypeDTO) &#123; return expenseTypeDTO.getId(); &#125; &#125;);]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[MWeb]]></title>
       <url>%2Fposts%2FMWeb%2F</url>
       <content type="text"><![CDATA[##MWeb官网 ##使用方法]]></content>
