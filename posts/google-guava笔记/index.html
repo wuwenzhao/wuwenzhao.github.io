@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="1. List to Map1234567ImmutableMap&amp;lt;Integer, ExpenseTypeDTO&amp;gt; expenseTypeMap = Maps.uniqueIndex(expenseTypeDTOList, new Function&amp;lt;ExpenseTypeDTO, Integer&amp;gt;() &amp;#123;            @Nullable">
+<meta name="description" content="Maven Dependency123456&amp;lt;!-- https://mvnrepository.com/artifact/com.google.guava/guava --&amp;gt;&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;com.google.guava&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;guava&amp;lt;/artif">
 <meta property="og:type" content="article">
 <meta property="og:title" content="google guava笔记">
 <meta property="og:url" content="http://blog.wuwenzhao.com/posts/google-guava笔记/index.html">
 <meta property="og:site_name" content="Exception">
-<meta property="og:description" content="1. List to Map1234567ImmutableMap&amp;lt;Integer, ExpenseTypeDTO&amp;gt; expenseTypeMap = Maps.uniqueIndex(expenseTypeDTOList, new Function&amp;lt;ExpenseTypeDTO, Integer&amp;gt;() &amp;#123;            @Nullable">
-<meta property="og:updated_time" content="2017-04-30T11:08:41.000Z">
+<meta property="og:description" content="Maven Dependency123456&amp;lt;!-- https://mvnrepository.com/artifact/com.google.guava/guava --&amp;gt;&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;com.google.guava&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;guava&amp;lt;/artif">
+<meta property="og:updated_time" content="2017-04-30T11:45:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="google guava笔记">
-<meta name="twitter:description" content="1. List to Map1234567ImmutableMap&amp;lt;Integer, ExpenseTypeDTO&amp;gt; expenseTypeMap = Maps.uniqueIndex(expenseTypeDTOList, new Function&amp;lt;ExpenseTypeDTO, Integer&amp;gt;() &amp;#123;            @Nullable">
+<meta name="twitter:description" content="Maven Dependency123456&amp;lt;!-- https://mvnrepository.com/artifact/com.google.guava/guava --&amp;gt;&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;com.google.guava&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;guava&amp;lt;/artif">
 
 
 
@@ -431,7 +431,15 @@
       
 
       
-        <h4 id="1-List-to-Map"><a href="#1-List-to-Map" class="headerlink" title="1. List to Map"></a>1. List to Map</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">ImmutableMap&lt;Integer, ExpenseTypeDTO&gt; expenseTypeMap = Maps.uniqueIndex(expenseTypeDTOList, new Function&lt;ExpenseTypeDTO, Integer&gt;() &#123;</div><div class="line">            @Nullable</div><div class="line">            @Override</div><div class="line">            public Integer apply(ExpenseTypeDTO expenseTypeDTO) &#123;</div><div class="line">                return expenseTypeDTO.getId();</div><div class="line">            &#125;</div><div class="line">        &#125;);</div></pre></td></tr></table></figure>
+        <h3 id="Maven-Dependency"><a href="#Maven-Dependency" class="headerlink" title="Maven Dependency"></a>Maven Dependency</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/com.google.guava/guava --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.google.guava<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>guava<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>21.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><ol>
+<li><p>List to Map</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">ImmutableMap&lt;Integer, ExpenseTypeDTO&gt; expenseTypeMap = Maps.uniqueIndex(expenseTypeDTOList, <span class="keyword">new</span> Function&lt;ExpenseTypeDTO, Integer&gt;() &#123;</div><div class="line">    <span class="meta">@Nullable</span></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> Integer <span class="title">apply</span><span class="params">(ExpenseTypeDTO expenseTypeDTO)</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> expenseTypeDTO.getId();</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>List to List</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">List&lt;Integer&gt; expenseTypeIdList = Lists.transform(expenseTypePOList, <span class="keyword">new</span> Function&lt;ExpenseTypePO, Integer&gt;() &#123;</div><div class="line">    <span class="meta">@Nullable</span></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> Integer <span class="title">apply</span><span class="params">(ExpenseTypePO expenseTypePO)</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> expenseTypePO.getId();</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></li>
+</ol>
+
       
     </div>
 
@@ -476,6 +484,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/Maven镜像/" rel="prev" title="Maven镜像">
+                Maven镜像 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -549,7 +561,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -571,7 +583,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -641,7 +653,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-List-to-Map"><span class="nav-number">1.</span> <span class="nav-text">1. List to Map</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Maven-Dependency"><span class="nav-number">1.</span> <span class="nav-text">Maven Dependency</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用方法"><span class="nav-number">2.</span> <span class="nav-text">常用方法</span></a></li></ol></div>
             
 
           </div>

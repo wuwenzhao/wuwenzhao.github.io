@@ -3,9 +3,16 @@
   
     
     <entry>
+      <title><![CDATA[Maven镜像]]></title>
+      <url>%2Fposts%2FMaven%E9%95%9C%E5%83%8F%2F</url>
+      <content type="text"><![CDATA[中央仓库 123456789101112131415&lt;!-- 中央仓库1 --&gt;&lt;mirror&gt; &lt;id&gt;repo1&lt;/id&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt; &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt; &lt;url&gt;http://repo1.maven.org/maven2/&lt;/url&gt;&lt;/mirror&gt;&lt;!-- 中央仓库2 --&gt;&lt;mirror&gt; &lt;id&gt;repo2&lt;/id&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt; &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt; &lt;url&gt;http://repo2.maven.org/maven2/&lt;/url&gt;&lt;/mirror&gt; 国内镜像 1234567&lt;!-- 阿里云仓库 --&gt;&lt;mirror&gt; &lt;id&gt;alimaven&lt;/id&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt; &lt;name&gt;aliyun maven&lt;/name&gt; &lt;url&gt;http://maven.aliyun.com/nexus/content/repositories/central/&lt;/url&gt;&lt;/mirror&gt;]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[google guava笔记]]></title>
       <url>%2Fposts%2Fgoogle-guava%E7%AC%94%E8%AE%B0%2F</url>
-      <content type="text"><![CDATA[1. List to Map1234567ImmutableMap&lt;Integer, ExpenseTypeDTO&gt; expenseTypeMap = Maps.uniqueIndex(expenseTypeDTOList, new Function&lt;ExpenseTypeDTO, Integer&gt;() &#123; @Nullable @Override public Integer apply(ExpenseTypeDTO expenseTypeDTO) &#123; return expenseTypeDTO.getId(); &#125; &#125;);]]></content>
+      <content type="text"><![CDATA[Maven Dependency123456&lt;!-- https://mvnrepository.com/artifact/com.google.guava/guava --&gt;&lt;dependency&gt; &lt;groupId&gt;com.google.guava&lt;/groupId&gt; &lt;artifactId&gt;guava&lt;/artifactId&gt; &lt;version&gt;21.0&lt;/version&gt;&lt;/dependency&gt; 常用方法 List to Map 1234567ImmutableMap&lt;Integer, ExpenseTypeDTO&gt; expenseTypeMap = Maps.uniqueIndex(expenseTypeDTOList, new Function&lt;ExpenseTypeDTO, Integer&gt;() &#123; @Nullable @Override public Integer apply(ExpenseTypeDTO expenseTypeDTO) &#123; return expenseTypeDTO.getId(); &#125;&#125;); List to List 1234567List&lt;Integer&gt; expenseTypeIdList = Lists.transform(expenseTypePOList, new Function&lt;ExpenseTypePO, Integer&gt;() &#123; @Nullable @Override public Integer apply(ExpenseTypePO expenseTypePO) &#123; return expenseTypePO.getId(); &#125;&#125;);]]></content>
     </entry>
 
     
