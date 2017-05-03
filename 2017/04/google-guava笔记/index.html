@@ -93,7 +93,7 @@
 <meta property="og:url" content="http://wuwenzhao.com/2017/04/google-guava笔记/index.html">
 <meta property="og:site_name" content="Exception">
 <meta property="og:description" content="Maven Dependency123456&amp;lt;!-- https://mvnrepository.com/artifact/com.google.guava/guava --&amp;gt;&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;com.google.guava&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;guava&amp;lt;/artif">
-<meta property="og:updated_time" content="2017-05-03T07:17:14.000Z">
+<meta property="og:updated_time" content="2017-05-03T10:02:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="google guava笔记">
 <meta name="twitter:description" content="Maven Dependency123456&amp;lt;!-- https://mvnrepository.com/artifact/com.google.guava/guava --&amp;gt;&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;com.google.guava&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;guava&amp;lt;/artif">
@@ -440,7 +440,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">List&lt;Integer&gt; expenseTypeIdList = Lists.transform(expenseTypePOList, <span class="keyword">new</span> Function&lt;ExpenseTypePO, Integer&gt;() &#123;</div><div class="line">    <span class="meta">@Nullable</span></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> Integer <span class="title">apply</span><span class="params">(ExpenseTypePO expenseTypePO)</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> expenseTypePO.getId();</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 </li>
 <li><p>List 求交集</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">List&lt;String&gt; newList = ListUtils.retainAll(list1, list2);</div></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">List&lt;String&gt; newList = ListUtils.retainAll(list1, list2);</div></pre></td></tr></table></figure></li>
 </ol>
 
       
