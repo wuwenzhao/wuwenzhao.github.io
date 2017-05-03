@@ -3,57 +3,64 @@
   
     
     <entry>
+      <title><![CDATA[MyBatis3笔记]]></title>
+      <url>%2F2017%2F04%2FMyBatis3%E7%AC%94%E8%AE%B0%2F</url>
+      <content type="text"><![CDATA[1. 安装1. 依赖12345&lt;dependency&gt; &lt;groupId&gt;org.mybatis&lt;/groupId&gt; &lt;artifactId&gt;mybatis&lt;/artifactId&gt; &lt;version&gt;x.x.x&lt;/version&gt;&lt;/dependency&gt; http://www.mybatis.org/mybatis-3/zh/index.html]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Maven镜像]]></title>
-      <url>%2Fposts%2FMaven%E9%95%9C%E5%83%8F%2F</url>
+      <url>%2F2017%2F04%2FMaven%E9%95%9C%E5%83%8F%2F</url>
       <content type="text"><![CDATA[中央仓库 123456789101112131415&lt;!-- 中央仓库1 --&gt;&lt;mirror&gt; &lt;id&gt;repo1&lt;/id&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt; &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt; &lt;url&gt;http://repo1.maven.org/maven2/&lt;/url&gt;&lt;/mirror&gt;&lt;!-- 中央仓库2 --&gt;&lt;mirror&gt; &lt;id&gt;repo2&lt;/id&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt; &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt; &lt;url&gt;http://repo2.maven.org/maven2/&lt;/url&gt;&lt;/mirror&gt; 国内镜像 1234567&lt;!-- 阿里云仓库 --&gt;&lt;mirror&gt; &lt;id&gt;alimaven&lt;/id&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt; &lt;name&gt;aliyun maven&lt;/name&gt; &lt;url&gt;http://maven.aliyun.com/nexus/content/repositories/central/&lt;/url&gt;&lt;/mirror&gt;]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[google guava笔记]]></title>
-      <url>%2Fposts%2Fgoogle-guava%E7%AC%94%E8%AE%B0%2F</url>
-      <content type="text"><![CDATA[Maven Dependency123456&lt;!-- https://mvnrepository.com/artifact/com.google.guava/guava --&gt;&lt;dependency&gt; &lt;groupId&gt;com.google.guava&lt;/groupId&gt; &lt;artifactId&gt;guava&lt;/artifactId&gt; &lt;version&gt;21.0&lt;/version&gt;&lt;/dependency&gt; 常用方法 List to Map 1234567ImmutableMap&lt;Integer, ExpenseTypeDTO&gt; expenseTypeMap = Maps.uniqueIndex(expenseTypeDTOList, new Function&lt;ExpenseTypeDTO, Integer&gt;() &#123; @Nullable @Override public Integer apply(ExpenseTypeDTO expenseTypeDTO) &#123; return expenseTypeDTO.getId(); &#125;&#125;); List to List 1234567List&lt;Integer&gt; expenseTypeIdList = Lists.transform(expenseTypePOList, new Function&lt;ExpenseTypePO, Integer&gt;() &#123; @Nullable @Override public Integer apply(ExpenseTypePO expenseTypePO) &#123; return expenseTypePO.getId(); &#125;&#125;);]]></content>
+      <url>%2F2017%2F04%2Fgoogle-guava%E7%AC%94%E8%AE%B0%2F</url>
+      <content type="text"><![CDATA[Maven Dependency123456&lt;!-- https://mvnrepository.com/artifact/com.google.guava/guava --&gt;&lt;dependency&gt; &lt;groupId&gt;com.google.guava&lt;/groupId&gt; &lt;artifactId&gt;guava&lt;/artifactId&gt; &lt;version&gt;21.0&lt;/version&gt;&lt;/dependency&gt; 常用方法 List to Map 1234567ImmutableMap&lt;Integer, ExpenseTypeDTO&gt; expenseTypeMap = Maps.uniqueIndex(expenseTypeDTOList, new Function&lt;ExpenseTypeDTO, Integer&gt;() &#123; @Nullable @Override public Integer apply(ExpenseTypeDTO expenseTypeDTO) &#123; return expenseTypeDTO.getId(); &#125;&#125;); List to List 1234567List&lt;Integer&gt; expenseTypeIdList = Lists.transform(expenseTypePOList, new Function&lt;ExpenseTypePO, Integer&gt;() &#123; @Nullable @Override public Integer apply(ExpenseTypePO expenseTypePO) &#123; return expenseTypePO.getId(); &#125;&#125;); List 求交集 1List&lt;String&gt; newList = ListUtils.retainAll(list1, list2);]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[MWeb]]></title>
-      <url>%2Fposts%2FMWeb%2F</url>
+      <url>%2F2017%2F04%2FMWeb%2F</url>
       <content type="text"><![CDATA[##MWeb官网 ##使用方法]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[hexo多说更换网易云跟贴]]></title>
-      <url>%2Fposts%2F%E5%A4%9A%E8%AF%B4%E6%9B%B4%E6%8D%A2%E4%BD%8D%E7%BD%91%E6%98%93%E4%BA%91%E8%B7%9F%E8%B4%B4%2F</url>
+      <url>%2F2017%2F03%2F%E5%A4%9A%E8%AF%B4%E6%9B%B4%E6%8D%A2%E4%BD%8D%E7%BD%91%E6%98%93%E4%BA%91%E8%B7%9F%E8%B4%B4%2F</url>
       <content type="text"><![CDATA[意料之中的突然，多说马上要停止服务；找了个替代品 网易云跟贴 接入步骤（next主题为例） 注册账户 完善站点信息，获取productKey 配置主题下面的_config.yml gentie_productKey12# Gentie productKeygentie_productKey: xxxxxxxxxxxxxxxxxxx]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[解决Error: Cannot find module './build/default/DTraceProviderBindings]]></title>
-      <url>%2Fposts%2F%E8%A7%A3%E5%86%B3Error-Cannot-find-module-build-default-DTraceProviderBindings%2F</url>
+      <url>%2F2017%2F03%2F%E8%A7%A3%E5%86%B3Error-Cannot-find-module-build-default-DTraceProviderBindings%2F</url>
       <content type="text"><![CDATA[升级node v6.8.0之后发现hexo一直报这个错，虽然貌似不影响使用，但…强迫症 解决方法：121. npm uninstall hexo-cli -g2. npm install hexo-cli -g]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[MySQL笔记]]></title>
-      <url>%2Fposts%2FMySQL%E7%AC%94%E8%AE%B0%2F</url>
+      <url>%2F2017%2F03%2FMySQL%E7%AC%94%E8%AE%B0%2F</url>
       <content type="text"><![CDATA[MySQL的update语句，set列的顺序是有关系的，后面列的计算是以前面列的结果为基础的，即从左向右评估； SQLServer的update语句，set的顺序无关，所有的更改都是基于之前取出的快照； varchar类型字段，在头或尾有空格不会影响where = 操作；即：12A（varchar) "xxx "select * from table where A="xxx"; 有效]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>%2Fposts%2Fhello-world%2F</url>
+      <url>%2F2017%2F03%2Fhello-world%2F</url>
       <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[hexo更换主题]]></title>
-      <url>%2Fposts%2Fhexo%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%2F</url>
+      <url>%2F2017%2F03%2Fhexo%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%2F</url>
       <content type="text"><![CDATA[1. 克隆代码到主题文件夹1$ git clone https://github.com/iissnan/hexo-theme-next themes/next 2. 配置主题12_config.ymltheme: hexo-theme-next]]></content>
     </entry>
 
