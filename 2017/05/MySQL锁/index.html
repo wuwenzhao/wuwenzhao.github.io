@@ -88,18 +88,96 @@
 
 
 <meta name="description" content="不同存储引擎中锁的特性如下：
--| 行锁 | 表锁 | 页锁—|—|—|—MyISAM |   | √ |BDB    |   | √ | √InnoDB | √ | √ |">
+
+
+
+
+
+行锁
+表锁
+页锁
+
+
+
+
+MyISAM
+
+Y
+
+
+
+BDB
+
+Y
+Y
+
+
+InnoDB
+Y
+Y">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL锁">
 <meta property="og:url" content="http://wuwenzhao.com/2017/05/MySQL锁/index.html">
 <meta property="og:site_name" content="Exception">
 <meta property="og:description" content="不同存储引擎中锁的特性如下：
--| 行锁 | 表锁 | 页锁—|—|—|—MyISAM |   | √ |BDB    |   | √ | √InnoDB | √ | √ |">
-<meta property="og:updated_time" content="2017-06-05T06:53:20.000Z">
+
+
+
+
+
+行锁
+表锁
+页锁
+
+
+
+
+MyISAM
+
+Y
+
+
+
+BDB
+
+Y
+Y
+
+
+InnoDB
+Y
+Y">
+<meta property="og:updated_time" content="2017-06-05T07:04:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL锁">
 <meta name="twitter:description" content="不同存储引擎中锁的特性如下：
--| 行锁 | 表锁 | 页锁—|—|—|—MyISAM |   | √ |BDB    |   | √ | √InnoDB | √ | √ |">
+
+
+
+
+
+行锁
+表锁
+页锁
+
+
+
+
+MyISAM
+
+Y
+
+
+
+BDB
+
+Y
+Y
+
+
+InnoDB
+Y
+Y">
 
 
 
@@ -436,10 +514,38 @@
       
         <!-- http://www.2cto.com/database/201606/517171.html -->
 <ul>
-<li><p>不同存储引擎中锁的特性如下：</p>
-<p>-| 行锁 | 表锁 | 页锁<br>—|—|—|—<br>MyISAM |   | √ |<br>BDB    |   | √ | √<br>InnoDB | √ | √ |</p>
-</li>
+<li>不同存储引擎中锁的特性如下：</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>行锁</th>
+<th>表锁</th>
+<th>页锁</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MyISAM</td>
+<td></td>
+<td>Y</td>
+<td></td>
+</tr>
+<tr>
+<td>BDB</td>
+<td></td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>InnoDB</td>
+<td>Y</td>
+<td>Y</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
       
     </div>

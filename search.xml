@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[MySQL锁]]></title>
       <url>%2F2017%2F05%2FMySQL%E9%94%81%2F</url>
-      <content type="text"><![CDATA[不同存储引擎中锁的特性如下： -| 行锁 | 表锁 | 页锁—|—|—|—MyISAM | | √ |BDB | | √ | √InnoDB | √ | √ |]]></content>
+      <content type="text"><![CDATA[不同存储引擎中锁的特性如下： 行锁 表锁 页锁 MyISAM Y BDB Y Y InnoDB Y Y]]></content>
     </entry>
 
     
