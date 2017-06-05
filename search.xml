@@ -3,9 +3,16 @@
   
     
     <entry>
-      <title><![CDATA[MyBatis3笔记]]></title>
-      <url>%2F2017%2F04%2FMyBatis3%E7%AC%94%E8%AE%B0%2F</url>
-      <content type="text"><![CDATA[1. 安装1. 依赖12345&lt;dependency&gt; &lt;groupId&gt;org.mybatis&lt;/groupId&gt; &lt;artifactId&gt;mybatis&lt;/artifactId&gt; &lt;version&gt;x.x.x&lt;/version&gt;&lt;/dependency&gt; http://www.mybatis.org/mybatis-3/zh/index.html]]></content>
+      <title><![CDATA[MySQL锁]]></title>
+      <url>%2F2017%2F05%2FMySQL%E9%94%81%2F</url>
+      <content type="text"><![CDATA[不同存储引擎中锁的特性如下： -| 行锁 | 表锁 | 页锁—|—|—|—MyISAM | | √ |BDB | | √ | √InnoDB | √ | √ |]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[serialVersionUID]]></title>
+      <url>%2F2017%2F05%2FserialVersionUID%2F</url>
+      <content type="text"><![CDATA[serialVersionUID适用于Java的序列化机制。简单来说，Java的序列化机制是通过判断类的serialVersionUID来验证版本一致性的。在进行反序列化时，JVM会把传来的字节流中的serialVersionUID与本地相应实体类的serialVersionUID进行比较，如果相同就认为是一致的，可以进行反序列化，否则就会出现序列化版本不一致的异常，即是InvalidCastException。 serialVersionUID有两种显示的生成方式： 一是默认的1L，比如：private static final long serialVersionUID = 1L; 二是根据类名、接口名、成员方法及属性等来生成一个64位的哈希字段，比如：private static final long serialVersionUID = xxxxL; 当实现java.io.Serializable接口的类没有显式地定义一个serialVersionUID变量时候，Java序列化机制会根据编译的Class自动生成一个serialVersionUID作序列化版本比较用，这种情况下，如果Class文件(类名，方法明等)没有发生变化(增加空格，换行，增加注释等等)，就算再编译多次，serialVersionUID也不会变化的。 如果我们不希望通过编译来强制划分软件版本，即实现序列化接口的实体能够兼容先前版本，就需要显式地定义一个名为serialVersionUID，类型为long的变量，不修改这个变量值的序列化实体都可以相互进行串行化和反串行化。]]></content>
     </entry>
 
     
